@@ -1,0 +1,119 @@
+.overview_panel {
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: var(--background-color-light);
+}
+
+.overview_panel img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.overview_name {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.overview_region {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.overview_numbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  text-align: center;
+}
+
+.overview_label {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.detail_panel {
+  background-color: var(--background-color-light);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
+
+.detail_panel_heading {
+  padding: 1.25rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.detail_panel_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.25rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.detail_panel_label {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.detail_panel_borders {
+  padding: 20%;
+}
+
+.detail_panel_borders_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: repeat auto-fill, minmax(120px, 1fr);
+      grid-template-columns: repeat auto-fill, minmax(120px, 1fr);
+  gap: 1.5rem;
+}
+
+.detail_panel_borders_country {
+  text-align: center;
+}
+
+.detail_panel_borders_country img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+  }
+  .container_left {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/ span 4;
+  }
+  .container_right {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 8;
+    grid-column: 5/ span 8;
+  }
+}
+/*# sourceMappingURL=Country.module.css.map */
